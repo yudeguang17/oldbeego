@@ -16,9 +16,8 @@ package authz
 
 import (
 	"github.com/casbin/casbin"
-	"github.com/yudeguang/oldbeego"
-	"github.com/yudeguang/oldbeego/context"
-	"github.com/yudeguang/oldbeego/plugins/auth"
+	"github.com/yudeguang17/oldbeego/context"
+	"github.com/yudeguang17/oldbeego/plugins/auth"
 	"net/http"
 	"net/http/httptest"
 	"testing"

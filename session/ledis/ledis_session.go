@@ -9,7 +9,7 @@ import (
 
 	"github.com/siddontang/ledisdb/config"
 	"github.com/siddontang/ledisdb/ledis"
-	"github.com/yudeguang/oldbeego/session"
+	"github.com/yudeguang17/oldbeego/session"
 )
 
 var (

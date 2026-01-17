@@ -21,8 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yudeguang/oldbeego"
-	"github.com/yudeguang/oldbeego/context"
+	"github.com/yudeguang17/oldbeego/context"
 )
 
 // HTTPHeaderGuardRecorder is httptest.ResponseRecorder with own http.Header

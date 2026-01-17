@@ -19,6 +19,7 @@
 // go install github.com/go-sql-driver/mysql
 //
 // mysql session support need create table as sql:
+//
 //	CREATE TABLE `session` (
 //	`session_key` char(64) NOT NULL,
 //	`session_data` blob,
@@ -28,8 +29,10 @@
 //
 // Usage:
 // import(
-//   _ "github.com/yudeguang/oldbeego/session/mysql"
-//   "github.com/yudeguang/oldbeego/session"
+//
+//	_ "github.com/yudeguang17/oldbeego/session/mysql"
+//	"github.com/yudeguang17/oldbeego/session"
+//
 // )
 //
 //	func init() {
@@ -46,7 +49,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/yudeguang/oldbeego/session"
+	"github.com/yudeguang17/oldbeego/session"
 	// import mysql driver
 	_ "github.com/go-sql-driver/mysql"
 )

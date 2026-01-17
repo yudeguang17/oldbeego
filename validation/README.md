@@ -7,18 +7,18 @@ validation is a form validation for a data validation and error collecting using
 
 Install:
 
-	go get github.com/yudeguang/oldbeego/validation
+	go get github.com/yudeguang17/oldbeego/validation
 
 Test:
 
-	go test github.com/yudeguang/oldbeego/validation
+	go test github.com/yudeguang17/oldbeego/validation
 
 ## Example
 
 Direct Use:
 
 	import (
-		"github.com/yudeguang/oldbeego/validation"
+		"github.com/yudeguang17/oldbeego/validation"
 		"log"
 	)
 
@@ -49,7 +49,7 @@ Direct Use:
 Struct Tag Use:
 
 	import (
-		"github.com/yudeguang/oldbeego/validation"
+		"github.com/yudeguang17/oldbeego/validation"
 	)
 
 	// validation function follow with "valid" tag
@@ -81,7 +81,7 @@ Struct Tag Use:
 Use custom function:
 
 	import (
-		"github.com/yudeguang/oldbeego/validation"
+		"github.com/yudeguang17/oldbeego/validation"
 	)
 
 	type user struct {

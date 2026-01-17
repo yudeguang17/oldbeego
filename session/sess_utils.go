@@ -29,7 +29,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/yudeguang/oldbeego/utils"
+	"github.com/yudeguang17/oldbeego/utils"
 )
 
 func init() {

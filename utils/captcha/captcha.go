@@ -19,9 +19,9 @@
 // package controllers
 //
 // import (
-// 	"github.com/yudeguang/oldbeego"
-// 	"github.com/yudeguang/oldbeego/cache"
-// 	"github.com/yudeguang/oldbeego/utils/captcha"
+// 	"github.com/yudeguang17/oldbeego"
+// 	"github.com/yudeguang17/oldbeego/cache"
+// 	"github.com/yudeguang17/oldbeego/utils/captcha"
 // )
 //
 // var cpt *captcha.Captcha
@@ -66,11 +66,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yudeguang/oldbeego"
-	"github.com/yudeguang/oldbeego/cache"
-	"github.com/yudeguang/oldbeego/context"
-	"github.com/yudeguang/oldbeego/logs"
-	"github.com/yudeguang/oldbeego/utils"
+	"github.com/yudeguang17/oldbeego/cache"
+	"github.com/yudeguang17/oldbeego/context"
+	"github.com/yudeguang17/oldbeego/logs"
+	"github.com/yudeguang17/oldbeego/utils"
 )
 
 var (

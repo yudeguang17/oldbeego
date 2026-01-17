@@ -20,14 +20,16 @@
 //
 // Usage:
 // import(
-//   _ "github.com/yudeguang/oldbeego/session/redis"
-//   "github.com/yudeguang/oldbeego/session"
+//
+//	_ "github.com/yudeguang17/oldbeego/session/redis"
+//	"github.com/yudeguang17/oldbeego/session"
+//
 // )
 //
-// 	func init() {
-// 		globalSessions, _ = session.NewManager("redis", ``{"cookieName":"gosessionid","gclifetime":3600,"ProviderConfig":"127.0.0.1:7070"}``)
-// 		go globalSessions.GC()
-// 	}
+//	func init() {
+//		globalSessions, _ = session.NewManager("redis", ``{"cookieName":"gosessionid","gclifetime":3600,"ProviderConfig":"127.0.0.1:7070"}``)
+//		go globalSessions.GC()
+//	}
 //
 // more docs: http://beego.me/docs/module/session.md
 package redis
@@ -39,7 +41,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/yudeguang/oldbeego/session"
+	"github.com/yudeguang17/oldbeego/session"
 
 	"github.com/gomodule/redigo/redis"
 )

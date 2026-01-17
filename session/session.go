@@ -16,13 +16,15 @@
 //
 // Usage:
 // import(
-//   "github.com/yudeguang/oldbeego/session"
+//
+//	"github.com/yudeguang17/oldbeego/session"
+//
 // )
 //
-//	func init() {
-//      globalSessions, _ = session.NewManager("memory", `{"cookieName":"gosessionid", "enableSetCookie,omitempty": true, "gclifetime":3600, "maxLifetime": 3600, "secure": false, "cookieLifeTime": 3600, "providerConfig": ""}`)
-//		go globalSessions.GC()
-//	}
+//		func init() {
+//	     globalSessions, _ = session.NewManager("memory", `{"cookieName":"gosessionid", "enableSetCookie,omitempty": true, "gclifetime":3600, "maxLifetime": 3600, "secure": false, "cookieLifeTime": 3600, "providerConfig": ""}`)
+//			go globalSessions.GC()
+//		}
 //
 // more docs: http://beego.me/docs/module/session.md
 package session
@@ -81,7 +83,7 @@ func Register(name string, provide Provider) {
 	provides[name] = provide
 }
 
-//GetProvider
+// GetProvider
 func GetProvider(name string) (Provider, error) {
 	provider, ok := provides[name]
 	if !ok {

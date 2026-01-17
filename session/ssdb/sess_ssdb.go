@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	"github.com/ssdb/gossdb/ssdb"
-	"github.com/yudeguang/oldbeego/session"
+	"github.com/yudeguang17/oldbeego/session"
 )
 
 var ssdbProvider = &Provider{}

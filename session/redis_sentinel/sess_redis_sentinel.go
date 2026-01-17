@@ -20,8 +20,10 @@
 //
 // Usage:
 // import(
-//   _ "github.com/yudeguang/oldbeego/session/redis_sentinel"
-//   "github.com/yudeguang/oldbeego/session"
+//
+//	_ "github.com/yudeguang17/oldbeego/session/redis_sentinel"
+//	"github.com/yudeguang17/oldbeego/session"
+//
 // )
 //
 //	func init() {
@@ -34,7 +36,7 @@ package redis_sentinel
 
 import (
 	"github.com/go-redis/redis"
-	"github.com/yudeguang/oldbeego/session"
+	"github.com/yudeguang17/oldbeego/session"
 	"net/http"
 	"strconv"
 	"strings"

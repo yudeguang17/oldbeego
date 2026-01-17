@@ -20,8 +20,10 @@
 //
 // Usage:
 // import(
-//   _ "github.com/yudeguang/oldbeego/session/redis_cluster"
-//   "github.com/yudeguang/oldbeego/session"
+//
+//	_ "github.com/yudeguang17/oldbeego/session/redis_cluster"
+//	"github.com/yudeguang17/oldbeego/session"
+//
 // )
 //
 //	func init() {
@@ -34,7 +36,7 @@ package redis_cluster
 
 import (
 	rediss "github.com/go-redis/redis"
-	"github.com/yudeguang/oldbeego/session"
+	"github.com/yudeguang17/oldbeego/session"
 	"net/http"
 	"strconv"
 	"strings"

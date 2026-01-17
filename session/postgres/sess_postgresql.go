@@ -18,7 +18,6 @@
 //
 // go install github.com/lib/pq
 //
-//
 // needs this table in your database:
 //
 // CREATE TABLE session (
@@ -35,11 +34,12 @@
 // SessionSavePath = "user=a password=b dbname=c sslmode=disable"
 // SessionName = session
 //
-//
 // Usage:
 // import(
-//   _ "github.com/yudeguang/oldbeego/session/postgresql"
-//   "github.com/yudeguang/oldbeego/session"
+//
+//	_ "github.com/yudeguang17/oldbeego/session/postgresql"
+//	"github.com/yudeguang17/oldbeego/session"
+//
 // )
 //
 //	func init() {
@@ -56,7 +56,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/yudeguang/oldbeego/session"
+	"github.com/yudeguang17/oldbeego/session"
 	// import postgresql Driver
 	_ "github.com/lib/pq"
 )

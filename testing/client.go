@@ -15,8 +15,8 @@
 package testing
 
 import (
-	"github.com/yudeguang/oldbeego/config"
-	"github.com/yudeguang/oldbeego/httplib"
+	"github.com/yudeguang17/oldbeego/config"
+	"github.com/yudeguang17/oldbeego/httplib"
 )
 
 var port = ""
