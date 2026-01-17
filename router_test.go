@@ -20,8 +20,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/yudeguang/oldbeego/context"
-	"github.com/yudeguang/oldbeego/logs"
+	"github.com/yudeguang17/oldbeego/context"
+	"github.com/yudeguang17/oldbeego/logs"
 )
 
 type TestController struct {

@@ -22,11 +22,11 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/yudeguang/oldbeego/config"
-	"github.com/yudeguang/oldbeego/context"
-	"github.com/yudeguang/oldbeego/logs"
-	"github.com/yudeguang/oldbeego/session"
-	"github.com/yudeguang/oldbeego/utils"
+	"github.com/yudeguang17/oldbeego/config"
+	"github.com/yudeguang17/oldbeego/context"
+	"github.com/yudeguang17/oldbeego/logs"
+	"github.com/yudeguang17/oldbeego/session"
+	"github.com/yudeguang17/oldbeego/utils"
 )
 
 // Config is the main struct for BConfig

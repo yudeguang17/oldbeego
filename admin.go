@@ -24,10 +24,10 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/yudeguang/oldbeego/grace"
-	"github.com/yudeguang/oldbeego/logs"
-	"github.com/yudeguang/oldbeego/toolbox"
-	"github.com/yudeguang/oldbeego/utils"
+	"github.com/yudeguang17/oldbeego/grace"
+	"github.com/yudeguang17/oldbeego/logs"
+	"github.com/yudeguang17/oldbeego/toolbox"
+	"github.com/yudeguang17/oldbeego/utils"
 )
 
 // BeeAdminApp is the default adminApp used by admin module.
@@ -36,7 +36,8 @@ var beeAdminApp *adminApp
 // FilterMonitorFunc is default monitor filter when admin module is enable.
 // if this func returns, admin module records qps for this request by condition of this function logic.
 // usage:
-// 	func MyFilterMonitor(method, requestPath string, t time.Duration, pattern string, statusCode int) bool {
+//
+//	func MyFilterMonitor(method, requestPath string, t time.Duration, pattern string, statusCode int) bool {
 //	 	if method == "POST" {
 //			return false
 //	 	}
@@ -47,8 +48,8 @@ var beeAdminApp *adminApp
 //			return false
 //	 	}
 //	 	return true
-// 	}
-// 	beego.FilterMonitorFunc = MyFilterMonitor.
+//	}
+//	beego.FilterMonitorFunc = MyFilterMonitor.
 var FilterMonitorFunc func(string, string, time.Duration, string, int) bool
 
 func init() {

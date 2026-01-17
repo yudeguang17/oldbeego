@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/yudeguang/oldbeego/context"
-	"github.com/yudeguang/oldbeego/logs"
-	"github.com/yudeguang/oldbeego/session"
+	"github.com/yudeguang17/oldbeego/context"
+	"github.com/yudeguang17/oldbeego/logs"
+	"github.com/yudeguang17/oldbeego/session"
 )
 
 // register MIME type with content type

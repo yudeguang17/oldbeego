@@ -23,8 +23,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/yudeguang/oldbeego/context"
-	"github.com/yudeguang/oldbeego/utils"
+	"github.com/yudeguang17/oldbeego/context"
+	"github.com/yudeguang17/oldbeego/utils"
 )
 
 const (
@@ -371,7 +371,8 @@ func responseError(rw http.ResponseWriter, r *http.Request, errCode int, errCont
 
 // ErrorHandler registers http.HandlerFunc to each http err code string.
 // usage:
-// 	beego.ErrorHandler("404",NotFound)
+//
+//	beego.ErrorHandler("404",NotFound)
 //	beego.ErrorHandler("500",InternalServerError)
 func ErrorHandler(code string, h http.HandlerFunc) *App {
 	ErrorMaps[code] = &errorInfo{
@@ -384,7 +385,8 @@ func ErrorHandler(code string, h http.HandlerFunc) *App {
 
 // ErrorController registers ControllerInterface to each http err code string.
 // usage:
-// 	beego.ErrorController(&controllers.ErrorController{})
+//
+//	beego.ErrorController(&controllers.ErrorController{})
 func ErrorController(c ControllerInterface) *App {
 	reflectVal := reflect.ValueOf(c)
 	rt := reflectVal.Type()

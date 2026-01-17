@@ -27,8 +27,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/yudeguang/oldbeego/logs"
-	"github.com/yudeguang/oldbeego/utils"
+	"github.com/yudeguang17/oldbeego/logs"
+	"github.com/yudeguang17/oldbeego/utils"
 )
 
 var (
@@ -163,8 +163,8 @@ func AddTemplateExt(ext string) {
 }
 
 // AddViewPath adds a new path to the supported view paths.
-//Can later be used by setting a controller ViewPath to this folder
-//will panic if called after beego.Run()
+// Can later be used by setting a controller ViewPath to this folder
+// will panic if called after beego.Run()
 func AddViewPath(viewPath string) error {
 	if beeViewPathTemplateLocked {
 		if _, exist := beeViewPathTemplates[viewPath]; exist {

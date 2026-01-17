@@ -17,7 +17,7 @@ package oldbeego
 import (
 	"strings"
 
-	"github.com/yudeguang/oldbeego/context"
+	"github.com/yudeguang17/oldbeego/context"
 )
 
 // PolicyFunc defines a policy function which is invoked before the controller handler is executed.

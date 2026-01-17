@@ -30,16 +30,16 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/yudeguang/oldbeego/context/param"
-	"github.com/yudeguang/oldbeego/logs"
-	"github.com/yudeguang/oldbeego/utils"
+	"github.com/yudeguang17/oldbeego/context/param"
+	"github.com/yudeguang17/oldbeego/logs"
+	"github.com/yudeguang17/oldbeego/utils"
 )
 
 var globalRouterTemplate = `package {{.routersDir}}
 
 import (
-	"github.com/yudeguang/oldbeego"
-	"github.com/yudeguang/oldbeego/context/param"{{.globalimport}}
+	"github.com/yudeguang17/oldbeego"
+	"github.com/yudeguang17/oldbeego/context/param"{{.globalimport}}
 )
 
 func init() {

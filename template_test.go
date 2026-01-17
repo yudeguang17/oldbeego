@@ -16,8 +16,7 @@ package oldbeego
 
 import (
 	"bytes"
-	"github.com/elazarl/go-bindata-assetfs"
-	"github.com/yudeguang/oldbeego/testdata"
+	"github.com/yudeguang17/oldbeego/testdata"
 	"net/http"
 	"os"
 	"path/filepath"

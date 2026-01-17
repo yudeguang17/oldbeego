@@ -18,7 +18,7 @@ import (
 	"net/http"
 	"strings"
 
-	beecontext "github.com/yudeguang/oldbeego/context"
+	beecontext "github.com/yudeguang17/oldbeego/context"
 )
 
 type namespaceCond func(*beecontext.Context) bool
@@ -47,12 +47,14 @@ func NewNamespace(prefix string, params ...LinkNamespace) *Namespace {
 // Cond set condition function
 // if cond return true can run this namespace, else can't
 // usage:
-// ns.Cond(func (ctx *context.Context) bool{
-//       if ctx.Input.Domain() == "api.beego.me" {
-//         return true
-//       }
-//       return false
-//   })
+//
+//	ns.Cond(func (ctx *context.Context) bool{
+//	      if ctx.Input.Domain() == "api.beego.me" {
+//	        return true
+//	      }
+//	      return false
+//	  })
+//
 // Cond as the first filter
 func (n *Namespace) Cond(cond namespaceCond) *Namespace {
 	fn := func(ctx *beecontext.Context) {
@@ -77,12 +79,13 @@ func (n *Namespace) Cond(cond namespaceCond) *Namespace {
 // action has before & after
 // FilterFunc
 // usage:
-// Filter("before", func (ctx *context.Context){
-//       _, ok := ctx.Input.Session("uid").(int)
-//       if !ok && ctx.Request.RequestURI != "/login" {
-//          ctx.Redirect(302, "/login")
-//        }
-//   })
+//
+//	Filter("before", func (ctx *context.Context){
+//	      _, ok := ctx.Input.Session("uid").(int)
+//	      if !ok && ctx.Request.RequestURI != "/login" {
+//	         ctx.Redirect(302, "/login")
+//	       }
+//	  })
 func (n *Namespace) Filter(action string, filter ...FilterFunc) *Namespace {
 	var a int
 	if action == "before" {
@@ -97,91 +100,91 @@ func (n *Namespace) Filter(action string, filter ...FilterFunc) *Namespace {
 }
 
 // Router same as beego.Rourer
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#Router
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#Router
 func (n *Namespace) Router(rootpath string, c ControllerInterface, mappingMethods ...string) *Namespace {
 	n.handlers.Add(rootpath, c, mappingMethods...)
 	return n
 }
 
 // AutoRouter same as beego.AutoRouter
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#AutoRouter
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#AutoRouter
 func (n *Namespace) AutoRouter(c ControllerInterface) *Namespace {
 	n.handlers.AddAuto(c)
 	return n
 }
 
 // AutoPrefix same as beego.AutoPrefix
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#AutoPrefix
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#AutoPrefix
 func (n *Namespace) AutoPrefix(prefix string, c ControllerInterface) *Namespace {
 	n.handlers.AddAutoPrefix(prefix, c)
 	return n
 }
 
 // Get same as beego.Get
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#Get
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#Get
 func (n *Namespace) Get(rootpath string, f FilterFunc) *Namespace {
 	n.handlers.Get(rootpath, f)
 	return n
 }
 
 // Post same as beego.Post
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#Post
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#Post
 func (n *Namespace) Post(rootpath string, f FilterFunc) *Namespace {
 	n.handlers.Post(rootpath, f)
 	return n
 }
 
 // Delete same as beego.Delete
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#Delete
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#Delete
 func (n *Namespace) Delete(rootpath string, f FilterFunc) *Namespace {
 	n.handlers.Delete(rootpath, f)
 	return n
 }
 
 // Put same as beego.Put
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#Put
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#Put
 func (n *Namespace) Put(rootpath string, f FilterFunc) *Namespace {
 	n.handlers.Put(rootpath, f)
 	return n
 }
 
 // Head same as beego.Head
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#Head
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#Head
 func (n *Namespace) Head(rootpath string, f FilterFunc) *Namespace {
 	n.handlers.Head(rootpath, f)
 	return n
 }
 
 // Options same as beego.Options
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#Options
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#Options
 func (n *Namespace) Options(rootpath string, f FilterFunc) *Namespace {
 	n.handlers.Options(rootpath, f)
 	return n
 }
 
 // Patch same as beego.Patch
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#Patch
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#Patch
 func (n *Namespace) Patch(rootpath string, f FilterFunc) *Namespace {
 	n.handlers.Patch(rootpath, f)
 	return n
 }
 
 // Any same as beego.Any
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#Any
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#Any
 func (n *Namespace) Any(rootpath string, f FilterFunc) *Namespace {
 	n.handlers.Any(rootpath, f)
 	return n
 }
 
 // Handler same as beego.Handler
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#Handler
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#Handler
 func (n *Namespace) Handler(rootpath string, h http.Handler) *Namespace {
 	n.handlers.Handler(rootpath, h)
 	return n
 }
 
 // Include add include class
-// refer: https://godoc.org/github.com/yudeguang/oldbeego#Include
+// refer: https://godoc.org/github.com/yudeguang17/oldbeego#Include
 func (n *Namespace) Include(cList ...ControllerInterface) *Namespace {
 	n.handlers.Include(cList...)
 	return n
@@ -189,21 +192,23 @@ func (n *Namespace) Include(cList ...ControllerInterface) *Namespace {
 
 // Namespace add nest Namespace
 // usage:
-//ns := beego.NewNamespace(“/v1”).
-//Namespace(
-//    beego.NewNamespace("/shop").
-//        Get("/:id", func(ctx *context.Context) {
-//            ctx.Output.Body([]byte("shopinfo"))
-//    }),
-//    beego.NewNamespace("/order").
-//        Get("/:id", func(ctx *context.Context) {
-//            ctx.Output.Body([]byte("orderinfo"))
-//    }),
-//    beego.NewNamespace("/crm").
-//        Get("/:id", func(ctx *context.Context) {
-//            ctx.Output.Body([]byte("crminfo"))
-//    }),
-//)
+// ns := beego.NewNamespace(“/v1”).
+// Namespace(
+//
+//	beego.NewNamespace("/shop").
+//	    Get("/:id", func(ctx *context.Context) {
+//	        ctx.Output.Body([]byte("shopinfo"))
+//	}),
+//	beego.NewNamespace("/order").
+//	    Get("/:id", func(ctx *context.Context) {
+//	        ctx.Output.Body([]byte("orderinfo"))
+//	}),
+//	beego.NewNamespace("/crm").
+//	    Get("/:id", func(ctx *context.Context) {
+//	        ctx.Output.Body([]byte("crminfo"))
+//	}),
+//
+// )
 func (n *Namespace) Namespace(ns ...*Namespace) *Namespace {
 	for _, ni := range ns {
 		for k, v := range ni.handlers.routers {
