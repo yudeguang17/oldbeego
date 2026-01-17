@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+//go:build go1.8
 // +build go1.8
 
 // Package orm provide ORM for MySQL/PostgreSQL/sqlite
@@ -21,7 +22,7 @@
 //
 //	import (
 //		"fmt"
-//		"github.com/yudeguang/oldbeego/orm"
+//		"github.com/yudeguang17/oldbeego/orm"
 //		_ "github.com/go-sql-driver/mysql" // import your used driver
 //	)
 //
@@ -270,8 +271,9 @@ func (o *orm) QueryM2M(md interface{}, name string) QueryM2Mer {
 // args are limit, offset int and order string.
 //
 // example:
-// 	orm.LoadRelated(post,"Tags")
-// 	for _,tag := range post.Tags{...}
+//
+//	orm.LoadRelated(post,"Tags")
+//	for _,tag := range post.Tags{...}
 //
 // make sure the relation is defined in model struct tags.
 func (o *orm) LoadRelated(md interface{}, name string, args ...interface{}) (int64, error) {
@@ -338,9 +340,9 @@ func (o *orm) LoadRelated(md interface{}, name string, args ...interface{}) (int
 // return a QuerySeter for related models to md model.
 // it can do all, update, delete in QuerySeter.
 // example:
-// 	qs := orm.QueryRelated(post,"Tag")
-//  qs.All(&[]*Tag{})
 //
+//		qs := orm.QueryRelated(post,"Tag")
+//	 qs.All(&[]*Tag{})
 func (o *orm) QueryRelated(md interface{}, name string) QuerySeter {
 	// is this api needed ?
 	_, _, _, qs := o.queryRelated(md, name)

@@ -29,7 +29,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/yudeguang/oldbeego/session"
+	"github.com/yudeguang17/oldbeego/session"
 )
 
 // Regexes for checking the accept headers

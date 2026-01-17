@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/OwnLocal/goes"
-	"github.com/yudeguang/oldbeego/logs"
+	"github.com/yudeguang17/oldbeego/logs"
 )
 
 // NewES return a LoggerInterface

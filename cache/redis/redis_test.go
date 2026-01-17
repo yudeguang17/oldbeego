@@ -19,7 +19,7 @@ import (
 	"time"
 
 	"github.com/gomodule/redigo/redis"
-	"github.com/yudeguang/oldbeego/cache"
+	"github.com/yudeguang17/oldbeego/cache"
 )
 
 func TestRedisCache(t *testing.T) {

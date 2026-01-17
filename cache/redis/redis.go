@@ -20,13 +20,15 @@
 //
 // Usage:
 // import(
-//   _ "github.com/yudeguang/oldbeego/cache/redis"
-//   "github.com/yudeguang/oldbeego/cache"
+//
+//	_ "github.com/yudeguang17/oldbeego/cache/redis"
+//	"github.com/yudeguang17/oldbeego/cache"
+//
 // )
 //
-//  bm, err := cache.NewCache("redis", `{"conn":"127.0.0.1:11211"}`)
+//	bm, err := cache.NewCache("redis", `{"conn":"127.0.0.1:11211"}`)
 //
-//  more docs http://beego.me/docs/module/cache.md
+//	more docs http://beego.me/docs/module/cache.md
 package redis
 
 import (
@@ -38,7 +40,7 @@ import (
 
 	"github.com/gomodule/redigo/redis"
 
-	"github.com/yudeguang/oldbeego/cache"
+	"github.com/yudeguang17/oldbeego/cache"
 	"strings"
 )
 

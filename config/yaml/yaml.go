@@ -19,14 +19,15 @@
 // go install github.com/beego/goyaml2
 //
 // Usage:
-//  import(
-//   _ "github.com/yudeguang/oldbeego/config/yaml"
-//     "github.com/yudeguang/oldbeego/config"
-//  )
 //
-//  cnf, err := config.NewConfig("yaml", "config.yaml")
+//	import(
+//	 _ "github.com/yudeguang17/oldbeego/config/yaml"
+//	   "github.com/yudeguang17/oldbeego/config"
+//	)
 //
-//More docs http://beego.me/docs/module/config.md
+//	cnf, err := config.NewConfig("yaml", "config.yaml")
+//
+// More docs http://beego.me/docs/module/config.md
 package yaml
 
 import (
@@ -41,7 +42,7 @@ import (
 	"sync"
 
 	"github.com/beego/goyaml2"
-	"github.com/yudeguang/oldbeego/config"
+	"github.com/yudeguang17/oldbeego/config"
 )
 
 // Config is a yaml config parser and implements Config interface.

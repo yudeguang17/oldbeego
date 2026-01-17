@@ -15,20 +15,20 @@
 // Package httplib is used as http.Client
 // Usage:
 //
-// import "github.com/yudeguang/oldbeego/httplib"
+// import "github.com/yudeguang17/oldbeego/httplib"
 //
-//	b := httplib.Post("http://beego.me/")
-//	b.Param("username","astaxie")
-//	b.Param("password","123456")
-//	b.PostFile("uploadfile1", "httplib.pdf")
-//	b.PostFile("uploadfile2", "httplib.txt")
-//	str, err := b.String()
-//	if err != nil {
-//		t.Fatal(err)
-//	}
-//	fmt.Println(str)
+//		b := httplib.Post("http://beego.me/")
+//		b.Param("username","astaxie")
+//		b.Param("password","123456")
+//		b.PostFile("uploadfile1", "httplib.pdf")
+//		b.PostFile("uploadfile2", "httplib.txt")
+//		str, err := b.String()
+//		if err != nil {
+//			t.Fatal(err)
+//		}
+//		fmt.Println(str)
 //
-//  more docs http://beego.me/docs/module/httplib.md
+//	 more docs http://beego.me/docs/module/httplib.md
 package httplib
 
 import (
@@ -271,9 +271,9 @@ func (b *BeegoHTTPRequest) SetTransport(transport http.RoundTripper) *BeegoHTTPR
 // example:
 //
 //	func(req *http.Request) (*url.URL, error) {
-// 		u, _ := url.ParseRequestURI("http://127.0.0.1:8118")
-// 		return u, nil
-// 	}
+//		u, _ := url.ParseRequestURI("http://127.0.0.1:8118")
+//		return u, nil
+//	}
 func (b *BeegoHTTPRequest) SetProxy(proxy func(*http.Request) (*url.URL, error)) *BeegoHTTPRequest {
 	b.setting.Proxy = proxy
 	return b
@@ -581,7 +581,7 @@ func (b *BeegoHTTPRequest) ToFile(filename string) error {
 	return err
 }
 
-//Check that the file directory exists, there is no automatically created
+// Check that the file directory exists, there is no automatically created
 func pathExistAndMkdir(filename string) (err error) {
 	filename = path.Dir(filename)
 	_, err = os.Stat(filename)

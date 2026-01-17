@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yudeguang/oldbeego/cache"
+	"github.com/yudeguang17/oldbeego/cache"
 )
 
 func TestMemcacheCache(t *testing.T) {

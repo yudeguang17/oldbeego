@@ -15,11 +15,11 @@
 // Package context provide the context utils
 // Usage:
 //
-//	import "github.com/yudeguang/oldbeego/context"
+//		import "github.com/yudeguang17/oldbeego/context"
 //
-//	ctx := context.Context{Request:req,ResponseWriter:rw}
+//		ctx := context.Context{Request:req,ResponseWriter:rw}
 //
-//  more docs http://beego.me/docs/module/context.md
+//	 more docs http://beego.me/docs/module/context.md
 package context
 
 import (
@@ -35,10 +35,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yudeguang/oldbeego/utils"
+	"github.com/yudeguang17/oldbeego/utils"
 )
 
-//commonly used mime-types
+// commonly used mime-types
 const (
 	ApplicationJSON = "application/json"
 	ApplicationXML  = "application/xml"
@@ -195,8 +195,8 @@ func (ctx *Context) RenderMethodResult(result interface{}) {
 	}
 }
 
-//Response is a wrapper for the http.ResponseWriter
-//started set to true if response was written to then don't execute other handler
+// Response is a wrapper for the http.ResponseWriter
+// started set to true if response was written to then don't execute other handler
 type Response struct {
 	http.ResponseWriter
 	Started bool

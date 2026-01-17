@@ -19,14 +19,15 @@
 // go install github.com/beego/x2j.
 //
 // Usage:
-//  import(
-//    _ "github.com/yudeguang/oldbeego/config/xml"
-//      "github.com/yudeguang/oldbeego/config"
-//  )
 //
-//  cnf, err := config.NewConfig("xml", "config.xml")
+//	import(
+//	  _ "github.com/yudeguang17/oldbeego/config/xml"
+//	    "github.com/yudeguang17/oldbeego/config"
+//	)
 //
-//More docs http://beego.me/docs/module/config.md
+//	cnf, err := config.NewConfig("xml", "config.xml")
+//
+// More docs http://beego.me/docs/module/config.md
 package xml
 
 import (
@@ -40,7 +41,7 @@ import (
 	"sync"
 
 	"github.com/beego/x2j"
-	"github.com/yudeguang/oldbeego/config"
+	"github.com/yudeguang17/oldbeego/config"
 )
 
 // Config is a xml config parser and implements Config interface.

@@ -15,7 +15,7 @@
 // Package logs provide a general log interface
 // Usage:
 //
-// import "github.com/yudeguang/oldbeego/logs"
+// import "github.com/yudeguang17/oldbeego/logs"
 //
 //	log := NewLogger(10000)
 //	log.SetLogger("console", "")
@@ -24,13 +24,13 @@
 //
 // Use it like this:
 //
-//	log.Trace("trace")
-//	log.Info("info")
-//	log.Warn("warning")
-//	log.Debug("debug")
-//	log.Critical("critical")
+//		log.Trace("trace")
+//		log.Info("info")
+//		log.Warn("warning")
+//		log.Debug("debug")
+//		log.Critical("critical")
 //
-//  more docs http://beego.me/docs/module/logs.md
+//	 more docs http://beego.me/docs/module/logs.md
 package logs
 
 import (
